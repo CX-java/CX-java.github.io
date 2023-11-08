@@ -1,0 +1,60 @@
+2023-11-07 16:37:21.074  WARN 17924 --- [http-nio-80-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-11-07 16:38:15.925  INFO 10172 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 10172 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 16:38:15.929  INFO 10172 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 16:38:16.048  INFO 10172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 16:38:16.076  INFO 10172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 16:38:19.843  INFO 10172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 16:38:19.893  INFO 10172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 16:38:19.894  INFO 10172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 16:38:20.196  INFO 10172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 16:38:20.197  INFO 10172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4119 ms
+2023-11-07 16:38:20.574  INFO 10172 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 16:38:20.889  INFO 10172 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 16:38:24.496  INFO 10172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 16:38:24.582  INFO 10172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 16:38:24.606  INFO 10172 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 10.116 seconds (JVM running for 13.562)
+2023-11-07 16:38:25.533  INFO 10172 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 16:38:25.535  INFO 10172 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 16:38:25.538  INFO 10172 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-07 16:39:18.072  INFO 10172 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 账户已删除
+2023-11-07 16:39:52.477  INFO 10172 --- [http-nio-80-exec-5] c.cx.atm.controller.AccountsController   : 账户ID: 12122
+2023-11-07 16:39:56.018  INFO 10172 --- [http-nio-80-exec-6] c.cx.atm.controller.AccountsController   : 账户已删除
+2023-11-07 16:45:59.345  WARN 10172 --- [http-nio-80-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 363291
+2023-11-07 16:45:59.406  INFO 10172 --- [http-nio-80-exec-9] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:45:59.407  INFO 10172 --- [http-nio-80-exec-9] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:46:09.707  INFO 10172 --- [http-nio-80-exec-10] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:52:14.846  INFO 10172 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:52:14.882  WARN 10172 --- [http-nio-80-exec-2] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 365166
+2023-11-07 16:56:44.364  INFO 10172 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:56:44.400  WARN 10172 --- [http-nio-80-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 269472
+2023-11-07 16:56:52.183  INFO 10172 --- [http-nio-80-exec-5] c.cx.atm.controller.AccountsController   : 此时的余额为:101990.0
+2023-11-07 16:56:55.026  INFO 10172 --- [http-nio-80-exec-6] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:57:03.852  INFO 10172 --- [http-nio-80-exec-7] c.cx.atm.controller.AccountsController   : 此时的余额为: 102202.0
+2023-11-07 16:57:06.647  INFO 10172 --- [http-nio-80-exec-8] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:57:26.566  WARN 10172 --- [http-nio-80-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 16:57:29.550  INFO 10172 --- [http-nio-80-exec-10] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 22:03:10.608  INFO 4328 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 4328 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 22:03:10.611  INFO 4328 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 22:03:10.682  INFO 4328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 22:03:10.682  INFO 4328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 22:03:12.765  INFO 4328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 22:03:12.803  INFO 4328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 22:03:12.803  INFO 4328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 22:03:13.004  INFO 4328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 22:03:13.017  INFO 4328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2334 ms
+2023-11-07 22:03:13.251  INFO 4328 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 22:03:13.434  INFO 4328 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 22:03:15.403  INFO 4328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 22:03:15.462  INFO 4328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 22:03:15.476  INFO 4328 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 6.077 seconds (JVM running for 9.091)
+2023-11-07 22:03:28.672  INFO 4328 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 22:03:28.696  INFO 4328 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 22:03:28.718  INFO 4328 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-07 22:03:30.471  INFO 4328 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:03:30.495  INFO 4328 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:04:59.089  WARN 4328 --- [http-nio-80-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 88625
+2023-11-07 22:04:59.139  INFO 4328 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:04:59.139  INFO 4328 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:05:40.442  INFO 4328 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:05:40.452  INFO 4328 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=102202.0, limitMoney=100000.0}
+2023-11-07 22:06:05.645  INFO 4328 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 账户ID: 43256785

@@ -1,0 +1,46 @@
+2023-11-06 15:10:58.443  WARN 18348 --- [http-nio-80-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2023-11-06 15:13:15.656  WARN 18348 --- [http-nio-80-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 137216
+2023-11-06 15:13:15.684  WARN 18348 --- [http-nio-80-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2023-11-06 15:18:16.074  WARN 18348 --- [http-nio-80-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 15:23:18.537  WARN 18348 --- [http-nio-80-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 3, column: 2]]
+2023-11-06 15:25:01.627  WARN 18348 --- [http-nio-80-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 15:25:17.386  WARN 18348 --- [http-nio-80-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 15:39:04.902  INFO 20728 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 20728 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-06 15:39:04.904  INFO 20728 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-06 15:39:04.978  INFO 20728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-06 15:39:04.979  INFO 20728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-06 15:39:06.768  INFO 20728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-06 15:39:06.780  INFO 20728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06 15:39:06.780  INFO 20728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-06 15:39:06.930  INFO 20728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06 15:39:06.930  INFO 20728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1950 ms
+2023-11-06 15:39:07.103  INFO 20728 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-06 15:39:07.254  INFO 20728 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-06 15:39:08.974  INFO 20728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-06 15:39:09.017  INFO 20728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-06 15:39:09.029  INFO 20728 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.025 seconds (JVM running for 7.207)
+2023-11-06 15:39:41.994  INFO 20728 --- [http-nio-80-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-06 15:39:41.995  INFO 20728 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-06 15:39:42.011  INFO 20728 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-06 15:39:42.129  WARN 20728 --- [http-nio-80-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 15:59:02.966  WARN 20728 --- [http-nio-80-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 15:59:20.187  INFO 4608 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 4608 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-06 15:59:20.190  INFO 4608 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-06 15:59:20.250  INFO 4608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-06 15:59:20.251  INFO 4608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-06 15:59:21.915  INFO 4608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-06 15:59:21.941  INFO 4608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-06 15:59:21.941  INFO 4608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-06 15:59:22.093  INFO 4608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-06 15:59:22.107  INFO 4608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1855 ms
+2023-11-06 15:59:22.295  INFO 4608 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-06 15:59:22.460  INFO 4608 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-06 15:59:24.230  INFO 4608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-06 15:59:24.289  INFO 4608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-06 15:59:24.304  INFO 4608 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 4.944 seconds (JVM running for 6.801)
+2023-11-06 15:59:31.210  INFO 4608 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-06 15:59:31.220  INFO 4608 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-06 15:59:31.229  INFO 4608 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-06 15:59:31.349  WARN 4608 --- [http-nio-80-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-06 16:00:01.934  WARN 4608 --- [http-nio-80-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "cardId=22242586"]
+2023-11-06 16:01:30.687  WARN 4608 --- [http-nio-80-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "cardId=22242586"]

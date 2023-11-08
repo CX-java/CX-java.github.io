@@ -1,0 +1,31 @@
+2023-11-07 00:05:58.832  INFO 10208 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 00:06:32.554  INFO 8452 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 8452 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 00:06:32.556  INFO 8452 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 00:06:32.635  INFO 8452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 00:06:32.662  INFO 8452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 00:06:34.413  INFO 8452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 00:06:34.425  INFO 8452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 00:06:34.425  INFO 8452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 00:06:34.607  INFO 8452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 00:06:34.608  INFO 8452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1945 ms
+2023-11-07 00:06:34.807  INFO 8452 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 00:06:34.956  INFO 8452 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 00:06:36.852  INFO 8452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 00:06:36.905  INFO 8452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 00:06:36.919  INFO 8452 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.326 seconds (JVM running for 7.407)
+2023-11-07 00:07:03.039  INFO 8452 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 00:07:03.039  INFO 8452 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 00:07:03.041  INFO 8452 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 00:07:04.252  INFO 8452 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=100000.0, limitMoney=100000.0}
+2023-11-07 00:07:04.252  INFO 8452 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=100000.0, limitMoney=100000.0}
+2023-11-07 00:07:07.084  INFO 8452 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 00:07:15.190  INFO 8452 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 00:12:05.981  INFO 8452 --- [http-nio-80-exec-6] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 00:12:05.999  WARN 8452 --- [http-nio-80-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 290793
+2023-11-07 00:17:58.556  INFO 20676 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 20676 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 00:17:58.558  INFO 20676 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 00:17:58.629  INFO 20676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 00:17:58.630  INFO 20676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 00:18:00.685  INFO 20676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 00:18:00.716  INFO 20676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 00:18:00.716  INFO 20676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]

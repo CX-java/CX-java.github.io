@@ -1,0 +1,29 @@
+2023-11-08 12:03:19.862  INFO 10168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-08 12:03:19.886  INFO 10168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-08 12:03:19.886  INFO 10168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-08 12:03:20.068  INFO 10168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-08 12:03:20.070  INFO 10168 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2085 ms
+2023-11-08 12:03:20.282  INFO 10168 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-08 12:03:20.481  INFO 10168 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-08 12:03:22.354  INFO 10168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-08 12:03:22.410  INFO 10168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-08 12:03:22.425  INFO 10168 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.51 seconds (JVM running for 7.954)
+2023-11-08 12:03:42.446  INFO 10168 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-08 12:03:42.446  INFO 10168 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-08 12:03:42.447  INFO 10168 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-08 12:03:43.700  INFO 10168 --- [http-nio-80-exec-3] c.c.a.service.impl.AccountsServiceImpl   : Account{userName='张文杰', cardId=1150205, passWord='333222', sex='男', money=900.0, limitMoney=10000.0, lastName='null', transferId=null}
+2023-11-08 12:03:43.701  INFO 10168 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='张文杰', cardId=1150205, passWord='333222', sex='男', money=900.0, limitMoney=10000.0, lastName='null', transferId=null}
+2023-11-08 12:03:46.710  INFO 10168 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 1150205
+2023-11-08 12:03:52.417  WARN 10168 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'MoneyInput' for method parameter type double is not present]
+2023-11-08 12:03:54.595  INFO 10168 --- [http-nio-80-exec-5] c.cx.atm.controller.AccountsController   : 账户ID: 1150205
+2023-11-08 12:04:01.845  INFO 10168 --- [http-nio-80-exec-6] c.cx.atm.controller.AccountsController   : 此时的余额为: 1132.0
+2023-11-08 12:04:03.986  INFO 10168 --- [http-nio-80-exec-7] c.cx.atm.controller.AccountsController   : 账户ID: 1150205
+2023-11-08 12:04:31.869  INFO 10168 --- [http-nio-80-exec-8] c.c.a.service.impl.AccountsServiceImpl   : 转账操作完成
+2023-11-08 12:04:33.946  INFO 10168 --- [http-nio-80-exec-9] c.cx.atm.controller.AccountsController   : 账户ID: 1150205
+2023-11-08 12:07:21.236  INFO 11904 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 11904 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-08 12:07:21.239  INFO 11904 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-08 12:07:21.324  INFO 11904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-08 12:07:21.325  INFO 11904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-08 12:07:23.346  INFO 11904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-08 12:07:23.379  INFO 11904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-08 12:07:23.380  INFO 11904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]

@@ -1,0 +1,76 @@
+2023-11-05 19:12:00.036  WARN 1956 --- [http-nio-80-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 69014
+2023-11-05 19:12:00.083  INFO 1956 --- [http-nio-80-exec-9] c.cx.atm.controller.AccountsController   : 登录成功：Account(userName=null, cardId=86251918, passWord=888999, sex=null, money=0.0, limit=0.0)
+2023-11-05 19:15:19.568  WARN 1956 --- [http-nio-80-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 199485
+2023-11-05 19:15:19.590  INFO 1956 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 登录成功：Account(userName=null, cardId=86251918, passWord=888999, sex=null, money=0.0, limit=0.0)
+2023-11-05 19:30:13.821  INFO 1956 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:30:13.853  WARN 1956 --- [http-nio-80-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 894264
+2023-11-05 19:30:14.102  WARN 1956 --- [http-nio-80-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375391' for key 'accounts.PRIMARY'<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.insertAccount-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO accounts(UserName,CardId,Password,Sex,limitmoney) VALUES (?,?,?,?,?)<EOL><EOL>### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375391' for key 'accounts.PRIMARY'<EOL>; Duplicate entry '29375391' for key 'accounts.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375391' for key 'accounts.PRIMARY']
+2023-11-05 19:30:57.388  INFO 1956 --- [http-nio-80-exec-8] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:33:03.636  WARN 1956 --- [http-nio-80-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-05 19:37:03.038  INFO 2596 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 2596 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-05 19:37:03.040  INFO 2596 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-05 19:37:03.103  INFO 2596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 19:37:03.103  INFO 2596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 19:37:04.900  INFO 2596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-05 19:37:04.914  INFO 2596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-05 19:37:04.915  INFO 2596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-05 19:37:05.078  INFO 2596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-05 19:37:05.079  INFO 2596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1975 ms
+2023-11-05 19:37:05.262  INFO 2596 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-05 19:37:05.422  INFO 2596 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-05 19:37:07.299  INFO 2596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-05 19:37:07.369  INFO 2596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-05 19:37:07.383  INFO 2596 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.222 seconds (JVM running for 7.274)
+2023-11-05 19:37:22.448  INFO 2596 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 19:37:22.462  INFO 2596 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-05 19:37:22.473  INFO 2596 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-05 19:37:53.132  INFO 2596 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:39:22.508  WARN 2596 --- [http-nio-80-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-05 19:39:22.508  WARN 2596 --- [http-nio-80-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-05 19:40:55.018  WARN 2596 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-05 19:40:55.023  WARN 2596 --- [http-nio-80-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-05 19:42:12.390  INFO 11628 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 11628 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-05 19:42:12.392  INFO 11628 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-05 19:42:12.463  INFO 11628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 19:42:12.463  INFO 11628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 19:42:14.754  INFO 11628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-05 19:42:14.784  INFO 11628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-05 19:42:14.785  INFO 11628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-05 19:42:14.946  INFO 11628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-05 19:42:14.955  INFO 11628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2491 ms
+2023-11-05 19:42:15.163  INFO 11628 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-05 19:42:15.347  INFO 11628 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-05 19:42:17.323  INFO 11628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-05 19:42:17.392  INFO 11628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-05 19:42:17.412  INFO 11628 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.938 seconds (JVM running for 8.15)
+2023-11-05 19:42:51.920  INFO 11628 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 19:42:51.930  INFO 11628 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-05 19:42:51.940  INFO 11628 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-05 19:43:06.394  WARN 11628 --- [http-nio-80-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cx.atm.pojo.Account com.cx.atm.controller.AccountsController.registerAccount(com.cx.atm.pojo.Account)]
+2023-11-05 19:43:06.402  WARN 11628 --- [http-nio-80-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.cx.atm.pojo.Account com.cx.atm.controller.AccountsController.registerAccount(com.cx.atm.pojo.Account)]
+2023-11-05 19:50:32.637  INFO 15520 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 15520 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-05 19:50:32.639  INFO 15520 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-05 19:50:32.717  INFO 15520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 19:50:32.718  INFO 15520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-05 19:50:34.896  INFO 15520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-05 19:50:34.930  INFO 15520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-05 19:50:34.930  INFO 15520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-05 19:50:35.129  INFO 15520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-05 19:50:35.142  INFO 15520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2423 ms
+2023-11-05 19:50:35.420  INFO 15520 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-05 19:50:35.633  INFO 15520 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-05 19:50:37.699  INFO 15520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-05 19:50:37.769  INFO 15520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-05 19:50:37.786  INFO 15520 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 6.005 seconds (JVM running for 9.495)
+2023-11-05 19:51:05.553  INFO 15520 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-05 19:51:05.563  INFO 15520 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-05 19:51:05.573  INFO 15520 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-05 19:52:15.306  INFO 15520 --- [http-nio-80-exec-8] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:52:15.307  INFO 15520 --- [http-nio-80-exec-7] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:52:37.991  WARN 15520 --- [http-nio-80-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375308' for key 'accounts.PRIMARY'<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.insertAccount-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO accounts(UserName,CardId,Password,Sex,limitmoney) VALUES (?,?,?,?,?)<EOL><EOL>### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375308' for key 'accounts.PRIMARY'<EOL>; Duplicate entry '29375308' for key 'accounts.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '29375308' for key 'accounts.PRIMARY']
+2023-11-05 19:55:40.838  INFO 15520 --- [http-nio-80-exec-8] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:55:40.871  INFO 15520 --- [http-nio-80-exec-10] c.cx.atm.controller.AccountsController   : 开户添加完成
+2023-11-05 19:55:40.873  WARN 15520 --- [http-nio-80-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 199703
+2023-11-05 19:55:40.883  WARN 15520 --- [http-nio-80-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 199754
+2023-11-05 19:55:40.934  WARN 15520 --- [http-nio-80-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '11502003' for key 'accounts.PRIMARY'<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.insertAccount-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO accounts(UserName,CardId,Password,Sex,limitmoney) VALUES (?,?,?,?,?)<EOL><EOL>### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '11502003' for key 'accounts.PRIMARY'<EOL>; Duplicate entry '11502003' for key 'accounts.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '11502003' for key 'accounts.PRIMARY']
+2023-11-05 20:33:55.919  INFO 15520 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...

@@ -1,0 +1,35 @@
+server:
+  port: 80
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC
+      username: root
+      password: 125259
+  main:
+    allow-circular-references: true
+---
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+---
+logging:
+  file:
+    name: D:/JAVA/logs/atm.log
+  level:
+    com:
+      emp_jdbc: DEBUG
+  logback:
+    rollingpolicy:
+      max-file-size: 4KB
+      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+---
+pattern:
+  #console: "%d - %m%n"\
+  console: "%d %clr(%p) --- [%16t] %clr(%-40.40c){cyan} :%m %n"
+---
+

@@ -1,0 +1,46 @@
+2023-11-04 18:05:22.490  WARN 4060 --- [http-nio-8081-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 177621
+2023-11-04 18:05:25.583  INFO 4060 --- [http-nio-8081-exec-10] com.cx.atm.controller.AccountController  : 账户ID: 10
+2023-11-04 18:09:04.558  INFO 2256 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 2256 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 18:09:04.560  INFO 2256 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 18:09:04.631  INFO 2256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 18:09:04.632  INFO 2256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 18:09:06.366  INFO 2256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 18:09:06.378  INFO 2256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 18:09:06.378  INFO 2256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 18:09:06.528  INFO 2256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 18:09:06.529  INFO 2256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1896 ms
+2023-11-04 18:09:06.707  INFO 2256 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 18:09:06.867  INFO 2256 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 18:09:08.212  WARN 2256 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 18:09:08.859  INFO 2256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 18:09:08.912  INFO 2256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 18:09:08.928  INFO 2256 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.257 seconds (JVM running for 7.12)
+2023-11-04 18:09:30.436  INFO 13224 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 13224 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 18:09:30.438  INFO 13224 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 18:09:30.509  INFO 13224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 18:09:30.510  INFO 13224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 18:09:32.224  INFO 13224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 18:09:32.237  INFO 13224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 18:09:32.238  INFO 13224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 18:09:32.383  INFO 13224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 18:09:32.384  INFO 13224 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1874 ms
+2023-11-04 18:09:32.560  INFO 13224 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 18:09:32.703  INFO 13224 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 18:09:33.904  WARN 13224 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 18:09:34.617  INFO 13224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 18:09:34.666  INFO 13224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 18:09:34.683  INFO 13224 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.036 seconds (JVM running for 6.945)
+2023-11-04 18:09:39.696  INFO 13224 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04 18:09:39.709  INFO 13224 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04 18:09:39.711  INFO 13224 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-04 18:09:41.803  INFO 13224 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:48.115  INFO 13224 --- [http-nio-8081-exec-3] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:52.747  INFO 13224 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:53.162  INFO 13224 --- [http-nio-8081-exec-6] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:53.376  INFO 13224 --- [http-nio-8081-exec-5] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:53.577  INFO 13224 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:53.769  INFO 13224 --- [http-nio-8081-exec-2] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:09:54.471  INFO 13224 --- [http-nio-8081-exec-9] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 18:10:41.483  INFO 13224 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 8
+2023-11-04 18:10:44.876  INFO 13224 --- [http-nio-8081-exec-6] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 8
+2023-11-04 18:13:34.982  WARN 13224 --- [http-nio-8081-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 170089

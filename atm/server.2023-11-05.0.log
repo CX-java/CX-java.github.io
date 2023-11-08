@@ -1,0 +1,88 @@
+2023-11-04 21:17:29.686  INFO 15544 --- [http-nio-8081-exec-6] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:17:35.533  INFO 15544 --- [http-nio-8081-exec-10] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:17:44.240  INFO 15544 --- [http-nio-8081-exec-5] com.cx.atm.controller.AccountController  : 账户ID: 15
+2023-11-04 21:17:44.261  INFO 15544 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:17:44.978  INFO 15544 --- [http-nio-8081-exec-4] com.cx.atm.controller.AccountController  : 账户ID: 15
+2023-11-04 21:17:44.998  INFO 15544 --- [http-nio-8081-exec-9] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:17:45.766  INFO 15544 --- [http-nio-8081-exec-3] com.cx.atm.controller.AccountController  : 账户ID: 15
+2023-11-04 21:17:45.787  INFO 15544 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:17:46.689  INFO 15544 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : 账户ID: 15
+2023-11-04 21:17:46.711  INFO 15544 --- [http-nio-8081-exec-2] com.cx.atm.controller.AccountController  : 当前页: 1，每页大小: 10
+2023-11-04 21:18:01.062  INFO 7972 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 7972 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 21:18:01.065  INFO 7972 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 21:18:01.142  INFO 7972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 21:18:01.142  INFO 7972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 21:18:02.867  INFO 7972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 21:18:02.879  INFO 7972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 21:18:02.879  INFO 7972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 21:18:03.037  INFO 7972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 21:18:03.038  INFO 7972 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1895 ms
+2023-11-04 21:18:03.240  INFO 7972 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 21:18:03.395  INFO 7972 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 21:18:04.614  WARN 7972 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 21:18:05.235  INFO 7972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 21:18:05.282  INFO 7972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 21:18:05.295  INFO 7972 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.039 seconds (JVM running for 6.965)
+2023-11-04 21:18:12.247  INFO 7972 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04 21:18:12.248  INFO 7972 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04 21:18:12.249  INFO 7972 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-04 21:18:12.796  WARN 7972 --- [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "userId1"]
+2023-11-04 21:18:19.469  WARN 7972 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "userId1"]
+2023-11-04 21:23:52.240  INFO 15876 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 15876 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 21:23:52.242  INFO 15876 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 21:23:52.314  INFO 15876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 21:23:52.315  INFO 15876 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 21:23:54.067  INFO 15876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 21:23:54.091  INFO 15876 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 21:23:54.092  INFO 15876 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 21:23:54.246  INFO 15876 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 21:23:54.255  INFO 15876 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1939 ms
+2023-11-04 21:23:54.453  INFO 15876 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 21:23:54.604  INFO 15876 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 21:23:55.863  WARN 15876 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 21:23:56.510  INFO 15876 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 21:23:56.563  INFO 15876 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 21:23:56.578  INFO 15876 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.186 seconds (JVM running for 7.156)
+2023-11-04 21:24:03.933  INFO 15876 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04 21:24:03.944  INFO 15876 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04 21:24:03.945  INFO 15876 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-04 21:24:05.951  INFO 15876 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=null, createdAt=null)
+2023-11-04 21:24:10.918  INFO 15876 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=null, createdAt=null)
+2023-11-04 21:24:30.698  INFO 15876 --- [http-nio-8081-exec-3] com.cx.atm.controller.AccountController  : Account(aid=0, userId=4, balance=null, createdAt=null)
+2023-11-04 21:28:27.380  INFO 15876 --- [http-nio-8081-exec-10] com.cx.atm.controller.AccountController  : 账户ID: 3
+2023-11-04 21:28:27.418  WARN 15876 --- [http-nio-8081-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 236703
+2023-11-04 21:28:27.452  WARN 15876 --- [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5]
+2023-11-04 21:29:04.057  INFO 15876 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : 账户ID: 1
+2023-11-04 21:33:50.352  INFO 16600 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 16600 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 21:33:50.354  INFO 16600 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 21:33:50.437  INFO 16600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 21:33:50.437  INFO 16600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 21:33:52.398  INFO 16600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 21:33:52.433  INFO 16600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 21:33:52.434  INFO 16600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 21:33:52.638  INFO 16600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 21:33:52.647  INFO 16600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2209 ms
+2023-11-04 21:33:52.847  INFO 16600 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 21:33:53.018  INFO 16600 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 21:33:54.351  WARN 16600 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 21:33:55.064  INFO 16600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 21:33:55.117  INFO 16600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 21:33:55.132  INFO 16600 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.636 seconds (JVM running for 7.562)
+2023-11-04 21:33:55.305  INFO 16600 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04 21:33:55.316  INFO 16600 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04 21:33:55.317  INFO 16600 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-04 21:33:57.703  INFO 16600 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=null, createdAt=null)
+2023-11-04 21:34:01.841  INFO 16600 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : Account(aid=0, userId=3, balance=null, createdAt=null)
+2023-11-04 21:36:05.302  INFO 16600 --- [http-nio-8081-exec-9] com.cx.atm.controller.AccountController  : 账户ID: 1
+2023-11-04 21:36:05.329  WARN 16600 --- [http-nio-8081-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 123479
+2023-11-04 21:36:54.747  INFO 16600 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : 账户ID: 3
+2023-11-04 21:36:54.772  WARN 16600 --- [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 5]
+2023-11-04 21:40:42.327  WARN 16600 --- [http-nio-8081-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 227566
+2023-11-04 21:40:42.357  INFO 16600 --- [http-nio-8081-exec-3] com.cx.atm.controller.AccountController  : Account(aid=0, userId=3, balance=null, createdAt=null)
+2023-11-04 21:40:56.817  WARN 16600 --- [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`dbc`.`account`, CONSTRAINT `account_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `a_user` (`uid`))<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountMapper.addAccount-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO account(user_id,balance) VALUES (?,?)<EOL><EOL>### Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`dbc`.`account`, CONSTRAINT `account_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `a_user` (`uid`))<EOL>; Cannot add or update a child row: a foreign key constraint fails (`dbc`.`account`, CONSTRAINT `account_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `a_user` (`uid`)); nested exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`dbc`.`account`, CONSTRAINT `account_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `a_user` (`uid`))]
+2023-11-04 21:40:57.176  INFO 16600 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=3, balance=null, createdAt=null)
+2023-11-04 21:42:25.946  WARN 16600 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "add"]
+2023-11-05 11:47:20.455  INFO 3780 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 3780 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-05 11:47:20.486  INFO 3780 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-05 11:47:20.564  INFO 3780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-05 11:47:20.564  INFO 3780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'

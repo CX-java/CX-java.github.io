@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <!--meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ATM系统</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../plugins/elementui/index.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="hold-transition">
+<div id="app">
+    <div class="container">
+    <div class="content-header" align="center">
+        <h1>ATM系统</h1>
+    </div>
+    <div class="psmoney-container">
+        <div class="box" align="center">
+            <span>
+                <p>账号:{{cardId}}</p>
+                <p>ATM系统欢迎你</p></span></br>
+            <span>请选择下面对应的操作</span>
+        </div>
+        <div class="block">
+            <div class="center" >
+                <table class="table table-condensed" :data="dataList">
+                    <thead>
+                    <tr>
+                        <th v-for="header in tableHeaders" :key="header">{{ header }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-bind:key="cardId">
+                        <td>{{userName}}</td>
+                        <td>{{cardId}}</td>
+                        <td>{{sex}}</td>
+                        <td>{{money}}</td>
+                        <td>{{limitMoney}}</td>
+                    </tr>
+                </table>
+                <div class="btn-group">
+                <button class="btn btn-dark" @click="queryAccount">查询账户</button>
+                </div>
+                <div class="btn-group">
+                    <input type="number" v-model="MoneyInput" placeholder="请输入取款金额">
+                    <button type="button" class="btn btn-secondary" @click="takeMoney">取款</button>
+                </div>
+                <div class="btn-group">
+                <input type="number" v-model="putMoney" placeholder="请输入存款金额">
+                <button type="button" class="btn btn-secondary" @click="saveMoney">存款</button>
+                </div>
+                <div class="btn-group">
+                <input type="text"  v-model="transferId" placeholder="请输入转账人卡号">
+                <input type="text"  v-model="transferLastName" placeholder="请输入转账用户姓全名">
+                <input type="number" v-model="transferMoney" placeholder="请输入转账金额">
+                <button type="button" class="btn btn-dark" @click="transfer">转账</button>
+                </div>
+                <div class="btn-group">
+                <button type="button" class="btn btn-dark" @click="deleteAccount">注销账户</button>
+                <button type="button" class="btn btn-dark" @click="logout">退出登录</button>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+<!-- 引入组件库 -->
+<script src="../js/vue.js"></script>
+<script src="../plugins/elementui/index.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/axios-0.18.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            dataList: [],//当前页要展示的列表数据
+            tableHeaders: ['账户名', '账号', '性别', '余额', '限额'],
+            userName: '',
+            cardId: '',
+            passWord: '',
+            sex: '',
+            money: '',
+            limitMoney: '',
+            MoneyInput: '',
+            putMoney: '',
+            transferId: '',
+            transferLastName: '',
+            transferMoney: ''
+        },
+        created() {
+            this.cardId = localStorage.getItem('cardId');
+            this.passWord = localStorage.getItem('passWord');
+        },
+        methods: {
+            queryAccount() {
+                axios.get("http://localhost/accounts/" + this.cardId)
+                    .then(res => {
+                        this.userName = res.data.userName;
+                        this.cardId = localStorage.getItem('cardId');
+                        this.passWord = localStorage.getItem('passWord');
+                        this.sex = res.data.sex;
+                        this.money = res.data.money;
+                        this.limitMoney = res.data.limitMoney;
+                        console.log(res.data);
+                        alert("查询成功");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert("未查询到相关信息");
+                    });
+            },
+            takeMoney() {
+                if (this.MoneyInput <= 0) {
+                    alert("取款金额不能小于或等于0");
+                    return;
+                }
+                axios.post(`http://localhost/accounts/takemoney/${this.cardId}/${this.MoneyInput}`)
+                    .then(response => {
+                        console.log(response.data);
+                        alert("取款成功");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert("取款失败");
+                    });
+            },
+
+            saveMoney() {
+                if (this.putMoney <= 0) {
+                    alert("存款金额不能小于或等于0");
+                    return;
+                }
+                axios.post(`http://localhost/accounts/savemoney/${this.cardId}/${this.putMoney}`)
+                    .then(response => {
+                        console.log(response.data);
+                        alert("存款成功");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert("存款失败");
+                    });
+            },
+            transfer() {
+                if (this.transferMoney <= 0) {
+                    alert("转账金额必须大于0");
+                    return;
+                }
+                if (this.transferLastName === '') {
+                    alert("请输入转账用户姓名");
+                    return;
+                }
+                axios.post(`http://localhost/accounts/transfermoney/${this.cardId}/${this.transferId}/${this.transferLastName}/${this.transferMoney}`,)
+                    .then(response => {
+                        console.log(response.data);
+                        alert("转账成功");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert("转账失败");
+                    });
+            },
+            deleteAccount() {
+                axios.get(`http://localhost/accounts/deleteaccount/${this.cardId}`,)
+                    .then(response => {
+                        this.cardId = {};
+                        alert("账户注销成功");
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        alert("账户注销失败");
+                    });
+            },
+            logout(){
+                this.data={};
+                window.location.href = 'login.html';
+            }
+        }
+    });
+</script>
+<style>
+    .psmoney-container {
+        max-width: 600px;
+        max-height: 900px;
+        margin: 1px auto;
+        padding: 20px;
+        background: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .block{
+        max-width: 600px;
+        max-height: 800px;
+        margin: 5px auto;
+        padding: 20px;
+        background:#c0c4cc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        padding: 5px 10px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-group button {
+        width: 120px;
+    }
+</style>
+</html>

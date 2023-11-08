@@ -1,0 +1,46 @@
+2023-11-04 14:39:52.000  INFO 33684 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=5, balance=, createdAt=null)
+2023-11-04 14:39:58.900  INFO 33684 --- [http-nio-8081-exec-4] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:02.114  INFO 33684 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : 账户ID: 1
+2023-11-04 14:40:02.152  INFO 33684 --- [http-nio-8081-exec-2] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:04.414  INFO 33684 --- [http-nio-8081-exec-5] com.cx.atm.controller.AccountController  : 账户ID: 1
+2023-11-04 14:40:04.444  INFO 33684 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:21.661  INFO 33684 --- [http-nio-8081-exec-6] com.cx.atm.controller.AccountController  : 账户添加完成
+2023-11-04 14:40:21.685  INFO 33684 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:24.853  INFO 33684 --- [http-nio-8081-exec-4] com.cx.atm.controller.AccountController  : 账户添加完成
+2023-11-04 14:40:24.875  INFO 33684 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:27.029  INFO 33684 --- [http-nio-8081-exec-2] com.cx.atm.controller.AccountController  : 账户添加完成
+2023-11-04 14:40:27.051  INFO 33684 --- [http-nio-8081-exec-3] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:40:53.010  INFO 33684 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : Account(aid=0, userId=4, balance=, createdAt=null)
+2023-11-04 14:41:03.532  WARN 33684 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 4]
+2023-11-04 14:42:42.221  WARN 33684 --- [http-nio-8081-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 98676
+2023-11-04 14:42:42.256  INFO 33684 --- [http-nio-8081-exec-4] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:42:45.861  INFO 33684 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:51:29.615  WARN 33684 --- [http-nio-8081-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/dbc?serverTimezone=UTC, version : 1.2.8, lastPacketReceivedIdleMillis : 523754
+2023-11-04 14:51:29.654  INFO 33684 --- [http-nio-8081-exec-10] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:51:34.821  INFO 33684 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:51:37.875  INFO 33684 --- [http-nio-8081-exec-9] com.cx.atm.controller.AccountController  : 账户ID: 1
+2023-11-04 14:51:37.900  INFO 33684 --- [http-nio-8081-exec-10] com.cx.atm.controller.AccountController  : Account(aid=0, userId=1, balance=, createdAt=null)
+2023-11-04 14:52:56.999  INFO 8888 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 8888 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-04 14:52:57.001  INFO 8888 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-04 14:52:57.080  INFO 8888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-04 14:52:57.081  INFO 8888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-04 14:52:59.213  INFO 8888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-04 14:52:59.245  INFO 8888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-04 14:52:59.245  INFO 8888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-04 14:52:59.437  INFO 8888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-04 14:52:59.451  INFO 8888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2368 ms
+2023-11-04 14:52:59.683  INFO 8888 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-04 14:52:59.883  INFO 8888 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-04 14:53:01.364  WARN 8888 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.cx.atm.pojo.Account ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-11-04 14:53:02.093  INFO 8888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-04 14:53:02.147  INFO 8888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-04 14:53:02.161  INFO 8888 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 6.099 seconds (JVM running for 8.361)
+2023-11-04 14:53:03.516  INFO 8888 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-04 14:53:03.532  INFO 8888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-04 14:53:03.534  INFO 8888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-04 14:53:06.863  INFO 8888 --- [http-nio-8081-exec-9] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:53:07.959  INFO 8888 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:53:10.034  INFO 8888 --- [http-nio-8081-exec-5] com.cx.atm.controller.AccountController  : Account(aid=0, userId=null, balance=, createdAt=null)
+2023-11-04 14:53:16.545  INFO 8888 --- [http-nio-8081-exec-8] com.cx.atm.controller.AccountController  : Account(aid=0, userId=333, balance=, createdAt=null)
+2023-11-04 14:53:21.796  INFO 8888 --- [http-nio-8081-exec-7] com.cx.atm.controller.AccountController  : Account(aid=0, userId=3, balance=, createdAt=null)
+2023-11-04 14:53:25.029  INFO 8888 --- [http-nio-8081-exec-1] com.cx.atm.controller.AccountController  : 账户ID: 3

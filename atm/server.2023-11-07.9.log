@@ -1,0 +1,212 @@
+2023-11-07 15:32:25.806  INFO 8472 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:32:34.029  WARN 8472 --- [http-nio-80-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE ?<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 15:34:02.491  INFO 8092 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 8092 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:34:02.493  INFO 8092 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:34:02.567  INFO 8092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:34:02.567  INFO 8092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:34:04.300  INFO 8092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:34:04.315  INFO 8092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:34:04.315  INFO 8092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:34:04.508  INFO 8092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:34:04.509  INFO 8092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1941 ms
+2023-11-07 15:34:04.694  INFO 8092 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:34:04.844  INFO 8092 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:34:06.641  INFO 8092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:34:06.684  INFO 8092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:34:06.697  INFO 8092 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.07 seconds (JVM running for 7.187)
+2023-11-07 15:34:37.749  INFO 8092 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:34:37.749  INFO 8092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:34:37.751  INFO 8092 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 15:34:39.102  INFO 8092 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:34:39.103  INFO 8092 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:34:42.278  INFO 8092 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:35:00.764  WARN 8092 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE ?%<EOL><EOL>### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1]
+2023-11-07 15:35:03.653  INFO 8092 --- [http-nio-80-exec-5] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:41:28.210  INFO 21208 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 21208 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:41:28.213  INFO 21208 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:41:28.284  INFO 21208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:41:28.285  INFO 21208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:41:30.868  INFO 21208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:41:30.895  INFO 21208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:41:30.895  INFO 21208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:41:31.123  INFO 21208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:41:31.138  INFO 21208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2851 ms
+2023-11-07 15:41:31.446  INFO 21208 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:41:31.732  INFO 21208 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:41:34.097  INFO 21208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:41:34.163  INFO 21208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:41:34.178  INFO 21208 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 6.945 seconds (JVM running for 9.382)
+2023-11-07 15:41:34.303  INFO 21208 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:41:34.303  INFO 21208 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:41:34.315  INFO 21208 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 15:41:35.807  INFO 21208 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:41:35.818  INFO 21208 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:41:40.364  INFO 21208 --- [http-nio-80-exec-4] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:41:59.137  WARN 21208 --- [http-nio-80-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE ?%<EOL><EOL>### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%' at line 1]
+2023-11-07 15:44:06.607  INFO 21376 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 21376 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:44:06.610  INFO 21376 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:44:06.673  INFO 21376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:44:06.673  INFO 21376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:44:08.442  INFO 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:44:08.482  INFO 21376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:44:08.483  INFO 21376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:44:08.691  INFO 21376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:44:08.701  INFO 21376 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2027 ms
+2023-11-07 15:44:08.937  INFO 21376 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:44:09.120  INFO 21376 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:44:11.207  INFO 21376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:44:11.269  INFO 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:44:11.286  INFO 21376 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.559 seconds (JVM running for 7.578)
+2023-11-07 15:44:24.983  INFO 21376 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:44:24.994  INFO 21376 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:44:25.008  INFO 21376 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 15:44:26.389  INFO 21376 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:44:26.398  INFO 21376 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:44:31.005  INFO 21376 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:44:49.614  WARN 21376 --- [http-nio-80-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE ?<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 15:47:00.786  INFO 20820 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 20820 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:47:00.788  INFO 20820 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:47:00.872  INFO 20820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:47:00.873  INFO 20820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:47:03.024  INFO 20820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:47:03.062  INFO 20820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:47:03.062  INFO 20820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:47:03.233  INFO 20820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:47:03.242  INFO 20820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2368 ms
+2023-11-07 15:47:03.458  INFO 20820 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:47:03.647  INFO 20820 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:47:05.561  INFO 20820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:47:05.642  INFO 20820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:47:05.657  INFO 20820 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.9 seconds (JVM running for 8.012)
+2023-11-07 15:47:18.456  INFO 20820 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:47:18.469  INFO 20820 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:47:18.483  INFO 20820 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-07 15:47:19.951  INFO 20820 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:47:19.959  INFO 20820 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:47:23.647  INFO 20820 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:47:40.601  WARN 20820 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%'<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 15:48:26.308  INFO 19344 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 19344 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:48:26.312  INFO 19344 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:48:26.411  INFO 19344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:48:26.411  INFO 19344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:48:28.865  INFO 19344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:48:28.906  INFO 19344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:48:28.906  INFO 19344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:48:29.086  INFO 19344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:48:29.097  INFO 19344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2684 ms
+2023-11-07 15:48:29.296  INFO 19344 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:48:29.520  INFO 19344 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:48:31.531  INFO 19344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:48:31.587  INFO 19344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:48:31.603  INFO 19344 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 6.532 seconds (JVM running for 9.701)
+2023-11-07 15:48:35.937  INFO 19344 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:48:35.952  INFO 19344 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:48:35.967  INFO 19344 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-11-07 15:48:36.079  INFO 19344 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:48:55.660  WARN 19344 --- [http-nio-80-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 15:52:25.434  INFO 22300 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 22300 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:52:25.438  INFO 22300 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:52:25.504  INFO 22300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:52:25.505  INFO 22300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:52:27.267  INFO 22300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:52:27.294  INFO 22300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:52:27.294  INFO 22300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:52:27.448  INFO 22300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:52:27.462  INFO 22300 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1956 ms
+2023-11-07 15:52:27.690  INFO 22300 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:52:27.846  INFO 22300 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:52:29.643  INFO 22300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:52:29.706  INFO 22300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:52:29.719  INFO 22300 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.134 seconds (JVM running for 7.084)
+2023-11-07 15:53:27.742  INFO 22300 --- [http-nio-80-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:53:27.752  INFO 22300 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:53:27.761  INFO 22300 --- [http-nio-80-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 15:53:29.054  INFO 22300 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:53:29.066  INFO 22300 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:53:39.305  INFO 22300 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:53:54.507  WARN 22300 --- [http-nio-80-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 15:58:51.395  INFO 14656 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 14656 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 15:58:51.398  INFO 14656 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 15:58:51.456  INFO 14656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 15:58:51.457  INFO 14656 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 15:58:53.141  INFO 14656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 15:58:53.168  INFO 14656 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 15:58:53.169  INFO 14656 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 15:58:53.320  INFO 14656 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 15:58:53.329  INFO 14656 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1871 ms
+2023-11-07 15:58:53.506  INFO 14656 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 15:58:53.677  INFO 14656 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 15:58:55.450  INFO 14656 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 15:58:55.501  INFO 14656 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 15:58:55.515  INFO 14656 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 4.954 seconds (JVM running for 6.972)
+2023-11-07 15:59:15.498  INFO 14656 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 15:59:15.508  INFO 14656 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 15:59:15.523  INFO 14656 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 15:59:16.912  INFO 14656 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:59:16.921  INFO 14656 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 15:59:21.140  INFO 14656 --- [http-nio-80-exec-5] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 15:59:37.437  WARN 14656 --- [http-nio-80-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 16:00:28.355  INFO 9856 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 9856 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 16:00:28.357  INFO 9856 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 16:00:28.433  INFO 9856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 16:00:28.434  INFO 9856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 16:00:30.387  INFO 9856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 16:00:30.412  INFO 9856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 16:00:30.412  INFO 9856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 16:00:30.621  INFO 9856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 16:00:30.633  INFO 9856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2198 ms
+2023-11-07 16:00:30.844  INFO 9856 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 16:00:31.025  INFO 9856 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 16:00:32.914  INFO 9856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 16:00:32.964  INFO 9856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 16:00:32.977  INFO 9856 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.553 seconds (JVM running for 7.617)
+2023-11-07 16:00:46.195  INFO 9856 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 16:00:46.207  INFO 9856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 16:00:46.217  INFO 9856 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 16:00:47.598  INFO 9856 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:00:47.608  INFO 9856 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:00:50.780  INFO 9856 --- [http-nio-80-exec-2] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:01:05.076  WARN 9856 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 16:01:44.416  INFO 13240 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 13240 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 16:01:44.419  INFO 13240 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 16:01:44.485  INFO 13240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 16:01:44.486  INFO 13240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 16:01:46.111  INFO 13240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 16:01:46.138  INFO 13240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 16:01:46.138  INFO 13240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 16:01:46.302  INFO 13240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 16:01:46.313  INFO 13240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1825 ms
+2023-11-07 16:01:46.500  INFO 13240 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 16:01:46.657  INFO 13240 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 16:01:48.434  INFO 13240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 16:01:48.484  INFO 13240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 16:01:48.497  INFO 13240 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 4.924 seconds (JVM running for 6.868)
+2023-11-07 16:02:03.386  INFO 13240 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 16:02:03.396  INFO 13240 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 16:02:03.410  INFO 13240 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 16:02:04.762  INFO 13240 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:02:04.771  INFO 13240 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:02:09.354  INFO 13240 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:02:28.275  WARN 13240 --- [http-nio-80-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 16:15:24.516  INFO 7812 --- [restartedMain] com.cx.atm.AtmApplication                : Starting AtmApplication using Java 1.8.0_381 on PC-20230329ZZGJ with PID 7812 (D:\JAVA\Spring\atm\target\classes started by 晨曦 in D:\JAVA\Spring\atm)
+2023-11-07 16:15:24.518  INFO 7812 --- [restartedMain] com.cx.atm.AtmApplication                : No active profile set, falling back to 1 default profile: "default"
+2023-11-07 16:15:24.587  INFO 7812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-07 16:15:24.587  INFO 7812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-07 16:15:26.737  INFO 7812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2023-11-07 16:15:26.766  INFO 7812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-07 16:15:26.766  INFO 7812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2023-11-07 16:15:26.956  INFO 7812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-07 16:15:26.968  INFO 7812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2380 ms
+2023-11-07 16:15:27.164  INFO 7812 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-11-07 16:15:27.342  INFO 7812 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-11-07 16:15:29.301  INFO 7812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-11-07 16:15:29.359  INFO 7812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2023-11-07 16:15:29.373  INFO 7812 --- [restartedMain] com.cx.atm.AtmApplication                : Started AtmApplication in 5.793 seconds (JVM running for 7.879)
+2023-11-07 16:18:36.531  INFO 7812 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-07 16:18:36.542  INFO 7812 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-07 16:18:36.553  INFO 7812 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-07 16:18:37.895  INFO 7812 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:18:37.904  INFO 7812 --- [http-nio-80-exec-1] c.cx.atm.controller.AccountsController   : 登录成功：Account{userName='沈伟', cardId=43256785, passWord='312356', sex='男', money=101992.0, limitMoney=100000.0}
+2023-11-07 16:18:41.618  INFO 7812 --- [http-nio-80-exec-3] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
+2023-11-07 16:19:09.153  WARN 7812 --- [http-nio-80-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: No value specified for parameter 1<EOL><EOL>### The error may exist in com/cx/atm/mapper/AccountsMapper.java (best guess)<EOL><EOL>### The error may involve com.cx.atm.mapper.AccountsMapper.findByLastName-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: SELECT * FROM accounts WHERE UserName LIKE CONCAT(?, '%')<EOL><EOL>### Cause: java.sql.SQLException: No value specified for parameter 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: No value specified for parameter 1]
+2023-11-07 16:20:03.861  INFO 7812 --- [http-nio-80-exec-6] c.cx.atm.controller.AccountsController   : 账户ID: 43256785
